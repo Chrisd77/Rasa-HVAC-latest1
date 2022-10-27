@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Is there a replacement available for the fan?",
+    "intent": "item_no_stock",
+    "intent_prediction": {
+      "name": "replacement_part",
+      "confidence": 0.6283379197120667
+    }
+  }
+]

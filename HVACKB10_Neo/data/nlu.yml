@@ -1,0 +1,228 @@
+version: "3.1"
+nlu:
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: greet
+    examples: |
+      - hi i am a bot
+      - hello
+      - hi
+      - good morning
+      - good afternoon
+      - good evening
+      - hey there
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you around
+      - see you later
+
+  - intent: out_of_scope
+    examples: |
+      - that's not what I want to do
+      - you are no help
+      - wait stop
+      - this is no help at all
+      - tell me the weather
+      - can I order a pizza
+      - how old are you
+      - not really
+      - that's not right
+      - I changed my mind
+
+  - intent: dont_know
+    examples: |
+      - I don't know
+      - I'm unsure
+      - I don't know, can you recommend what to do?
+      - I don't know I'm just learning
+      - I've never done this before
+      - I'm new to this
+      - I don't know the next step
+      - I don't know what part to select
+      - I don't know what part to choose
+      - What should I do
+      - Where should I look
+      - I don't know where to begin
+      - Where would this be 
+      - Where would I locate this part
+      - Where is this
+      - Please help
+      - Help
+      - Help me 
+
+  - intent: neo4_actions
+    examples: |
+      - Can i book an [Italian](restaurant).
+      - The booking for [German](restaurant) is confirmed.
+      - I want to book the [Chinese](restaurant).
+      - I will book the [German](restaurant).
+      - The [Chinese](restaurant) needs to be booked.
+      - The [German](restaurant) is being booked.
+      - The [Italian](restaurant)) needs a booking.
+
+  - intent: general_fault
+    examples: |
+      - I have received a report that the [air conditioning](equipment) is not working
+      - I think the [air system](equipment) is problematic
+      - I think the [air conditioning](equipment) has a problem 
+      - The [air conditioning](equipment) has broken  
+      - There is no air in the [building](location), it is not working 
+      - It seems the [air conditioning](equipment) is broken
+      - I need to fix the fault with the [air conditioning](equipment)
+      - I've been told there is a fault with the [air conditioning](equipment)
+      - It seems there is an issue with the [ahu](equipment)  
+      - There is a problem in the [building](location)
+      - There is a problem with the [building](location)
+      - The [alarm](point) is going off
+      - The [alarm](point) is activated
+      - The [alarm](point) is blaring
+      - The [alarm](point) is flashing
+      - The screen says that the [booster fan](equipment) has failed.
+      - The [fan](equipment) part has failed
+      - The [fan](equipment) has failed
+      - The [booster fan](equipment) has failed
+      - The [fan](equipment) has failed
+      - The [booster fan](equipment) has stopped working
+      - The [heating](equipment) has stopped
+      - The [chiller](equipment) is off
+      - There is no [heating](equipment)
+      - The [alarm](point) is ringing
+      - The [fan](equipment) has stopped 
+      - The [camera](equipment) is blank
+      - There is no [lighting](equipment) 
+      - There is a smell of [oil](measurable)
+      - There is a smell of [gas](measurable)
+
+  - intent: general_fault_location
+    examples: |
+      - The fault is located somewhere in the [building](location)
+      - The fault is located in the [basement](location)
+      - The fault is located on the [basement](location)
+      - The fault is located on the [roof](location)
+      - I think the fault is located up on the [second floor](location)
+      - The issue is on the [seventh storey](location)
+      - The issue is in the [lobby](location)
+      - The issue is in the [conference room](location)
+      - The issue is in the [elevator](location)
+      - The issue is in [reception](location)
+      - [office](location)
+      - on the [ground floor](location)
+
+  - intent: general_control_panel
+    examples: |
+      - It says the [ahu](equipment) is unavailable.
+      - It says the [chiller](equipment) is unavailable.
+      - It says the [fan](equipment) has failed.
+      - It reads the [Thermostat](equipment) is unavailable.
+      - [Thermostat](equipment)
+      - The [boiler](equipment) is down
+      - The [pump](equipment) is down
+      - The [boiler](equipment) has a red light against it
+
+  - intent: replacement_part
+    examples: |
+      - Replace the [fan](equipment).
+      - Replace the [ahu](equipment) with a new part.
+      - The [Thermostat](equipment) has to be replaced.
+      - Is there a replacement available for the [fan](equipment)?
+      - I need to replace the [pump](equipment).
+      - I need a replacement [pump](equipment).
+      - It says please replace the [water pump](equipment)
+      - The part is [ahu](equipment)
+      - [ahu](equipment) replacement
+      - [Thermostat](equipment)
+
+  - intent: item_no_stock
+    examples: |
+      - That item [fan](equipment) is not in stock.
+      - That item [Thermostat](equipment) cannot be found.
+      - The [Thermostat](equipment) is not in stock.
+      - Is there a replacement available for the [fan](equipment)?
+      - The [pump](equipment) item is not in stock.
+
+  - intent: item_alternative
+    examples: |
+      - I need an [alternative](equipment) to [fan](equipment).
+      - What is an [alternative](equipment) to [Thermostat](equipment).
+      - Is there an [alternative](equipment) part in stock for [Thermostat](equipment).
+      - Is there a replacement [alternative](equipment) for the [fan](equipment)?
+      - Can you find me an [alternative](equipment) to [pump](equipment).
+      - What is the [pump](equipment) [alternative](equipment).
+      - [alternative](equipment) [fan](equipment)
+
+  - intent: query_knowledge_base
+    examples: |
+      - what [ahu](equipment) can you recommend?
+      - list some [chiller](equipment)
+      - can you name some [Boiler](equipment) please?
+      - can you show me some [valve](equipment) options?
+      - list [hvac-Equipment](attribute) of [fans](equipment)
+      - do you have any [hvac-Equipment]{"entity": "parent"} [fan](equipment)?
+      - what [parent](attribute) does [it]{"entity": "mention"} have?
+      - do you know what [parent](attribute) the [last one]{"entity": "mention", "value": "LAST"} has?
+      - does [AHU](equipment) have any [alternatives](attribute)?    
+      - what is with [Chiller](equipment)?
+      - What [fan](equipment) has the parent [hvac-Equipment](attribute)?
+      - What about any [hvac-Equipment]{"entity": "parent", "value": "hvac-Equipment"} [ahu](equipment)?
+      - Do you also know some [hvac-Equipment](attribute) [chillers](equipment)?
+      - what [parents](attribute) do [they]{"entity": "mention"} have?
+      - what [alarms](point) are there in the [building](location) ?
+      - please list some [points](point) with [critical operation](attribute) for me
+      - what [sensors](point) do you know are [occupant-related](attribute)?
+      - name some [points](point) that are [occupant-related](attribute)
+      - show me some [protocols](point)
+      - list [points](point) that are [occupant-related](attribute)
+      - what [protocol](attribute) does the [last]{"entity": "mention", "value": "LAST"} have?
+      - does the [second one]{"entity": "mention", "value": "2"} [include protocol](attribute)?
+      - what is the [protocol](attribute) of the [second one]{"entity": "mention", "value": "2"}?
+      - is the [first]{"entity": "mention", "value": "1"} one [monitered](attribute)?
+      - does the [third]{"entity": "mention", "value": "3"} one have a [display screen](attribute)?
+      - what is the [energy rating](attribute) of [Parameter](point)?
+      - Does the [Alarm](point) have a [display screen](attribute)?
+      - what is the [description](attribute) of the [Boiler](equipment)?
+      - [description](attribute) of the [Boiler](equipment)?
+      - what is the description of a [Boiler](equipment)?
+      - what does [Boiler](equipment) mean?
+      - what is the [description](attribute) of [Boiler](equipment)?
+      - [description](attribute) [Boiler](equipment)
+      - do you know the [description](attribute) of [ahu](equipment)?
+      - do you know the [description](attribute) of [that one]{"entity": "mention"}?
+      - can you tell me the [description](attribute) of [that equipment]{"entity": "mention"}?
+      - what is the [description](attribute) of the [second]{"entity": "mention", "value": "2"} point?
+      - can you give me the [description](equipment) of the [name](equipment)
+      - [description](equipment) of [Steam Radiator](equipment)
+      - please can you tell me the [description](equipment) of a [valve](equipment)
+
+  - lookup: equipment
+    examples: |
+      - AHU
+      - Boiler
+      - Chiller
+      - Damper
+      - Fan
+      - Thermostat
+      - Valve
+
+  - lookup: point
+    examples: |
+      - Alarm
+      - Command
+      - Parameter
+      - Sensor
+      - Setpoint
+      - Status
+
+#  - synonym: description
+ #   examples: |
+ #     - definition
+  #    - meaning
+  #    - mean
+  #    - descriptions

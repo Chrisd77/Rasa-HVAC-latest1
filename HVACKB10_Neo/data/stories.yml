@@ -1,0 +1,54 @@
+version: "3.1"
+stories:
+  - story: greet and then query knowledge base
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: query_knowledge_base
+    - action: action_query_knowledge_base
+
+  - story: neo4j restaurant
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: neo4_actions
+    - action: action_neo4_actions 
+
+#  - story: greet and then description
+ #   steps:
+  #  - intent: equipment_description
+   #   entities:
+    #  - equipment: ahu
+     # - attribute: description
+   # - slot_was_set:
+    #  - equipment: ahu
+    #  - attribute: description
+   # - action: utter_description
+
+  - story: happy path fault
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: general_fault
+      entities:
+      - equipment: ahu
+      - location: building
+    - slot_was_set:
+      - equipment: ahu
+      - location: building
+    - action: utter_general_fault
+    - intent: general_fault_location
+    - action: utter_general_fault_location
+    - intent: general_control_panel
+    - action: utter_general_control_panel
+    - intent: replacement_part
+      entities:
+      - equipment: ahu
+    - slot_was_set:
+      - equipment: ahu
+    - action: utter_replacement_part
+    - action: utter_item_no_stock
+    - intent: item_alternative
+    - action: utter_item_alternative
+    - intent: goodbye
+    - action: utter_goodbye

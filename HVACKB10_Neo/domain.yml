@@ -1,0 +1,152 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - general_fault
+  - general_fault_location
+  - general_control_panel
+  - out_of_scope
+  - query_knowledge_base
+  - replacement_part
+  - item_no_stock
+  - item_alternative
+  - bot_challenge
+  - dont_know
+  - neo4_actions
+
+entities:
+  - object_type
+  - mention
+  - attribute
+  - equipment
+  - point
+  - parent
+  - category
+  - location
+  - measurable
+  - restaurant
+
+slots:
+  object_type:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: object_type
+  mention:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: mention
+  attribute:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: attribute
+  equipment:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: equipment
+  point:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: point
+  parent:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: parent
+  category:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: category
+  location:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: location
+  measurable:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: measurable
+  restaurant:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: restaurant
+
+
+actions:
+- action_query_knowledge_base
+- action_neo4_actions
+
+responses:
+  utter_greet:
+  - text: "Hey!"
+  - text: "Hello! How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye. See you soon."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_general_fault:
+ # - text: "What type was the alert?"  
+  - text: "Do you know where the fault is located?"  
+ # - text: "Do you know where the fault is located?"
+
+  utter_general_fault_location:
+  - text: Please go to the control panel which is located in the basement. What does it say about the equipment? For example fan unavailable?
+
+  utter_general_control_panel:
+ # - text: "What type was the alert?"  
+  - text: "You will need to order a replacement part. Enter in the part name."  
+ # - text: "Do you know where the fault is located?"
+
+  utter_replacement_part:
+   - text: "The name of the part you requested is {equipment}..."
+
+  utter_description_equip:
+ # - text: "What type was the alert?"  
+  - text: "Here is the description of the equipment."  
+ # - text: "Do you know where the fault is located?"
+
+  utter_dont_know:
+  - text: "Please try rewording your request or you can enter the description of the fault to begin again."
+
+  utter_out_of_scope:
+  - text: "I am a bot and that request is beyond my capability."
+
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+  utter_default:
+  - text: I'm sorry, I can't help you. Please try rewording your request or you can enter the description of the fault to begin again."
+
+  utter_item_no_stock:
+  - text: You need to ask for an alternative part as your requested part {equipment} is unavailable.
+
+  utter_item_alternative:
+  - text: Thank you, your replacement item {equipment} is in stock. You will receive confirmation of your replacement part by email.
+
+
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

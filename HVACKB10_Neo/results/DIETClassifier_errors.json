@@ -1,0 +1,458 @@
+[
+  {
+    "text": "There is no air in the building, it is not working",
+    "entities": [
+      {
+        "start": 23,
+        "end": 31,
+        "value": "building",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "equipment",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.9461599588394165,
+        "value": "air",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "location",
+        "start": 23,
+        "end": 31,
+        "confidence_entity": 0.9537758231163025,
+        "value": "building",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "does AHU have an alternative?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 8,
+        "value": "AHU",
+        "entity": "equipment"
+      },
+      {
+        "start": 17,
+        "end": 28,
+        "value": "option",
+        "entity": "attribute"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "equipment",
+        "start": 5,
+        "end": 8,
+        "confidence_entity": 0.9591392874717712,
+        "value": "equipment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what points are there in the building ?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "point",
+        "entity": "object_type"
+      },
+      {
+        "start": 29,
+        "end": 37,
+        "value": "building",
+        "entity": "object_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "object_type",
+        "start": 5,
+        "end": 11,
+        "confidence_entity": 0.9985622763633728,
+        "value": "point",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "location",
+        "start": 29,
+        "end": 37,
+        "confidence_entity": 0.887302815914154,
+        "value": "building",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "does the first one have monitered?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 14,
+        "value": "1",
+        "entity": "mention"
+      },
+      {
+        "start": 24,
+        "end": 33,
+        "value": "monitered",
+        "entity": "attribute"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mention",
+        "start": 9,
+        "end": 18,
+        "confidence_entity": 0.5602962374687195,
+        "value": "first one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "attribute",
+        "start": 24,
+        "end": 33,
+        "confidence_entity": 0.9973884224891663,
+        "value": "monitered",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "does the third one have a display screen?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 14,
+        "value": "3",
+        "entity": "mention"
+      },
+      {
+        "start": 26,
+        "end": 40,
+        "value": "display-screen",
+        "entity": "attribute"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "mention",
+        "start": 9,
+        "end": 18,
+        "confidence_entity": 0.528815507888794,
+        "value": "third one",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "attribute",
+        "start": 26,
+        "end": 40,
+        "confidence_entity": 0.9943075776100159,
+        "value": "display-screen",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what is the description of the Boiler?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 23,
+        "value": "description",
+        "entity": "attribute"
+      },
+      {
+        "start": 31,
+        "end": 37,
+        "value": "equipment",
+        "entity": "object_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attribute",
+        "start": 12,
+        "end": 23,
+        "confidence_entity": 0.8436450362205505,
+        "value": "description",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "equipment",
+        "start": 31,
+        "end": 37,
+        "confidence_entity": 0.5443580150604248,
+        "value": "equipment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "description of Boiler?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "description",
+        "entity": "attribute"
+      },
+      {
+        "start": 15,
+        "end": 21,
+        "value": "equipment",
+        "entity": "object_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attribute",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.7352942228317261,
+        "value": "description",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "equipment",
+        "start": 15,
+        "end": 21,
+        "confidence_entity": 0.508411169052124,
+        "value": "equipment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what is meaning of Boiler?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 25,
+        "value": "equipment",
+        "entity": "object_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "equipment",
+        "start": 19,
+        "end": 25,
+        "confidence_entity": 0.5490432381629944,
+        "value": "equipment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do you know the description of ahu?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 27,
+        "value": "description",
+        "entity": "attribute"
+      },
+      {
+        "start": 31,
+        "end": 34,
+        "value": "equipment",
+        "entity": "object_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attribute",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.8305755853652954,
+        "value": "description",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "equipment",
+        "start": 31,
+        "end": 34,
+        "confidence_entity": 0.6316689252853394,
+        "value": "equipment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can you tell me the description of that equipment?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 31,
+        "value": "description",
+        "entity": "attribute"
+      },
+      {
+        "start": 35,
+        "end": 49,
+        "value": "that equipment",
+        "entity": "mention"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attribute",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.793823778629303,
+        "value": "description",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "mention",
+        "start": 35,
+        "end": 39,
+        "confidence_entity": 0.8266755938529968,
+        "value": "that",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "object_type",
+        "start": 40,
+        "end": 49,
+        "confidence_entity": 0.9143970608711243,
+        "value": "equipment",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can you give me the description of the name",
+    "entities": [
+      {
+        "start": 20,
+        "end": 31,
+        "value": "description",
+        "entity": "equipment"
+      },
+      {
+        "start": 39,
+        "end": 43,
+        "value": "name",
+        "entity": "equipment"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attribute",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.7658748626708984,
+        "value": "description",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "equipment",
+        "start": 39,
+        "end": 43,
+        "confidence_entity": 0.9937693476676941,
+        "value": "name",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "description of name",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "description",
+        "entity": "equipment"
+      },
+      {
+        "start": 15,
+        "end": 19,
+        "value": "name",
+        "entity": "equipment"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attribute",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.6615540385246277,
+        "value": "description",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "equipment",
+        "start": 15,
+        "end": 19,
+        "confidence_entity": 0.9785962104797363,
+        "value": "name",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please can you tell me the description of a name",
+    "entities": [
+      {
+        "start": 27,
+        "end": 38,
+        "value": "description",
+        "entity": "equipment"
+      },
+      {
+        "start": 44,
+        "end": 48,
+        "value": "name",
+        "entity": "equipment"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attribute",
+        "start": 27,
+        "end": 38,
+        "confidence_entity": 0.7246792912483215,
+        "value": "description",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "equipment",
+        "start": 44,
+        "end": 48,
+        "confidence_entity": 0.9930586814880371,
+        "value": "name",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

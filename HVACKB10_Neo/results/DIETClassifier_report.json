@@ -1,0 +1,91 @@
+{
+  "mention": {
+    "precision": 0.8823529411764706,
+    "recall": 0.9375,
+    "f1-score": 0.9090909090909091,
+    "support": 16,
+    "confused_with": {
+      "object_type": 1
+    }
+  },
+  "category": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "measurable": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "parent": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "point": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "equipment": {
+    "precision": 0.9367088607594937,
+    "recall": 0.961038961038961,
+    "f1-score": 0.9487179487179488,
+    "support": 77,
+    "confused_with": {
+      "attribute": 3
+    }
+  },
+  "location": {
+    "precision": 0.9444444444444444,
+    "recall": 1.0,
+    "f1-score": 0.9714285714285714,
+    "support": 17,
+    "confused_with": {}
+  },
+  "object_type": {
+    "precision": 0.9375,
+    "recall": 0.75,
+    "f1-score": 0.8333333333333334,
+    "support": 20,
+    "confused_with": {
+      "equipment": 4,
+      "location": 1
+    }
+  },
+  "attribute": {
+    "precision": 0.8846153846153846,
+    "recall": 0.9583333333333334,
+    "f1-score": 0.9199999999999999,
+    "support": 24,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9314285714285714,
+    "recall": 0.9421965317919075,
+    "f1-score": 0.9367816091954023,
+    "support": 173
+  },
+  "macro avg": {
+    "precision": 0.9539579589995326,
+    "recall": 0.9563191438191438,
+    "f1-score": 0.9536189736189736,
+    "support": 173
+  },
+  "weighted avg": {
+    "precision": 0.9322575382868746,
+    "recall": 0.9421965317919075,
+    "f1-score": 0.9355935779057165,
+    "support": 173
+  },
+  "accuracy": 0.9849012775842044
+}

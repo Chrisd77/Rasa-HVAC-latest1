@@ -1,0 +1,829 @@
+{
+    "equipment": [
+        {
+            "id": 0,
+            "name": "AHU",
+            "parent": "hvac-Equipment",
+            "alternative": "Air Handler Unit",   
+            "description": "Assembly consisting of sections containing a fan or fans and other necessary equipment to perform one or more of the following functions: circulating, filtration, heating, cooling, heat recovery, humidifying, dehumidifying, and mixing of air. Is usually connected to an air-distribution system."
+        },
+        {
+            "id": 1,
+            "name": "Air Plenum",
+            "parent": "hvac-Equipment",
+            "alternative": "Air Handler Unit",   
+            "description": "A component of the HVAC that receives air from the air handling unit or room to distribute or exhaust to or from the building."
+        },
+        {
+            "id": 2,
+            "name": "Boiler",
+            "parent": "hvac-Equipment",
+            "alternative": "none",  
+            "description": "A closed, pressure vessel that uses fuel or electricity for heating water or other fluids to supply steam or hot water for heating, humidification, or other applications."
+        },
+        {
+            "id": 3,
+            "name": "CRAC",
+            "parent": "hvac-Equipment",
+            "alternative": "none",  
+            "description": "A device that monitors and maintains the temperature, air distribution and humidity in a network room or data center."
+        },
+        {
+            "id": 4,
+            "name": "Chiller",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "Refrigerating machine used to transfer heat between fluids. Chillers are either direct expansion with a compressor or absorption type."
+        },
+        {
+            "id": 5,
+            "name": "Compressor",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "(1) device for mechanically increasing the pressure of a gas. (2) often described as being either open, hermetic, or semihermetic to describe how the compressor and motor drive is situated in relation to the gas or vapor being compressed. Types include centrifugal, axial flow, reciprocating, rotary screw, rotary vane, scroll, or diaphragm. 1. device for mechanically increasing the pressure of a gas. 2. specific machine, with or without accessories, for compressing refrigerant vapor."
+        },
+        {
+            "id": 6,
+            "name": "Computer Room Air Conditioning",
+            "parent": "hvac-Equipment",
+            "alternative": "CRAC",
+            "description": "A device that monitors and maintains the temperature, air distribution and humidity in a network room or data center."
+        },
+        {
+            "id": 7,
+            "name": "Condenser",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "A heat exchanger in which the primary heat transfer vapor changes its state to a liquid phase."
+        },
+        {
+            "id": 8,
+            "name": "Cooling Tower",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "A cooling tower is a heat rejection device that rejects waste heat to the atmosphere through the cooling of a water stream to a lower temperature. Cooling towers may either use the evaporation of water to remove process heat and cool the working fluid to near the wet-bulb air temperature or, in the case of closed circuit dry cooling towers, rely solely on air to cool the working fluid to near the dry-bulb air temperature."
+        },
+        {
+            "id": 9,
+            "name": "Damper",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "Element inserted into an air-distribution system or element of an air-distribution system permitting modification of the air resistance of the system and consequently changing the airflow rate or shutting off the airflow."
+        },
+        {
+            "id": 10,
+            "name": "Economizer",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "Device that, on proper variable sensing, initiates control signals or actions to conserve energy. A control system that reduces the mechanical heating and cooling requirement."
+        },
+        {
+            "id": 11,
+            "name": "Fan",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "Any device with two or more blades or vanes attached to a rotating shaft used to produce an airflow for the purpose of comfort, ventilation, exhaust, heating, cooling, or any other gaseous transport."
+        },
+        {
+            "id": 12,
+            "name": "Filter",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "Device to remove gases from a mixture of gases or to remove solid material from a fluid."
+        },
+        {
+            "id": 13,
+            "name": "Fume Hood",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "A fume-collection device mounted over a work space, table, or shelf and serving to conduct unwanted gases away from the area enclosed."
+        },
+        {
+            "id": 14,
+            "name": "HX",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "A heat exchanger is a piece of equipment built for efficient heat transfer from one medium to another. The media may be separated by a solid wall to prevent mixing or they may be in direct contact (BEDES)."
+        },
+        {
+            "id": 15,
+            "name": "Heat Exchanger",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "A heat exchanger is a piece of equipment built for efficient heat transfer from one medium to another. The media may be separated by a solid wall to prevent mixing or they may be in direct contact (BEDES)."
+        },
+        {
+            "id": 16,
+            "name": "Humidifier",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "A device that adds moisture to air or other gases."
+        },
+        {
+            "id": 17,
+            "name": "Pump",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "Machine for imparting energy to a fluid, causing it to do work, drawing a fluid into itself through an entrance port, and forcing the fluid out through an exhaust port."
+        },
+        {
+            "id": 18,
+            "name": "Space Heater",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "A heater used to warm the air in an enclosed area, such as a room or office."
+        },
+        {
+            "id": 19,
+            "name": "Terminal Unit",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "A heater used to warm the air in an enclosed area, such as a room or office."
+        },
+        {
+            "id": 20,
+            "name": "Thermostat",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "An automatic control device used to maintain temperature at a fixed or adjustable setpoint."
+        },
+        {
+            "id": 21,
+            "name": "Valve",
+            "parent": "hvac-Equipment",
+            "alternative": "none",
+            "description": "A device that regulates, directs or controls the flow of a fluid by opening, closing or partially obstructing various passageways"
+        },
+        {
+            "id": 22,
+            "name": "DOAS",
+            "parent": "AHU",
+            "alternative": "Dedicated Outdoor Air System Unit",
+            "description": "A device that conditions and delivers 100% outdoor air to its assigned spaces. It decouples air-conditioning of the outdoor air, usually used to provide minimum outdoor air ventilation, from conditioning of the internal loads."
+        },
+        {
+            "id": 23,
+            "name": "MAU",
+            "parent": "AHU",
+            "alternative": "Makeup Air Unit",
+            "description": "A device designed to condition ventilation air introduced into a space or to replace air exhausted from a process or general area exhaust. The device may be used to prevent negative pressure within buildings or to reduce airborne contaminants in a space."
+        },
+        {
+            "id": 24,
+            "name": "PAU",
+            "parent": "AHU",
+            "alternative": "none",
+            "description": "A type of AHU, use to pre-treat the outdoor air before feed to AHU."
+        },
+        {
+            "id": 25,
+            "name": "RTU",
+            "parent": "AHU",
+            "alternative": "Rooftop Unit",
+            "description": "Packaged air conditioner mounted on a roof, the conditioned air being discharged directly into the rooms below or through a duct system."
+        },
+        {
+            "id": 26,
+            "name": "Return Air Plenum",
+            "parent": "Air Plenum",
+            "alternative": "none",
+            "description": "A component of the HVAC the receives air from the room to recirculate or exhaust to or from the building."
+        },
+        {
+            "id": 27,
+            "name": "Supply Air Plenum",
+            "parent": "Air Plenum",
+            "alternative": "none",
+            "description": "A component of the HVAC the receives air from the air handling unit to distribute to the building."
+        }, 
+        {
+            "id": 28,
+            "name": "Electric Boiler",
+            "parent": "Boiler",
+            "alternative": "none",
+            "description": "A closed, pressure vessel that uses electricity for heating water or other fluids to supply steam or hot water for heating, humidification, or other applications."
+        },
+        {
+            "id": 29,
+            "name": "Boiler",
+            "parent": "Natural Gas Boiler",
+            "alternative": "none",
+            "description": "A closed, pressure vessel that uses natural gas for heating water or other fluids to supply steam or hot water for heating, humidification, or other applications."
+        }, 
+        {
+            "id": 30,
+            "name": "Standby CRAC",
+            "parent": "CRAC",
+            "alternative": "none",
+            "description": "A CRAC that is activated as part of a lead/lag operation or when an alarm occurs in a primary unit."
+        }, 
+        {
+            "id": 31,
+            "name": "Absorption Chiller",
+            "parent": "Chiller",
+            "alternative": "none",
+            "description": "A chiller that utilizes a thermal or/and chemical process to produce the refrigeration effect necessary to provide chilled water. There is no mechanical compression of the refrigerant taking place within the machine, as occurs within more traditional vapor compression type chillers."
+        }, 
+        {
+            "id": 32,
+            "name": "Centrifugal Chiller",
+            "parent": "Chiller",
+            "alternative": "none",
+            "description": "A chiller that uses the vapor compression cycle to chill water. It throws off the heat collected from the chilled water plus the heat from the compressor to a water loop."
+        }, 
+        {
+            "id": 33,
+            "name": "Economizer Damper",
+            "parent": "Damper",
+            "alternative": "none",
+            "description": "A damper that is part of an economizer that is used to module the flow of air."
+        }, 
+        {
+            "id": 34,
+            "name": "Exhaust Damper",
+            "parent": "Damper",
+            "alternative": "none",
+            "description": "A damper that modulates the flow of exhaust air."
+        }, 
+        {
+            "id": 35,
+            "name": "Mixed Damper",
+            "parent": "Damper",
+            "alternative": "none",
+            "description": "A damper that modulates the flow of the mixed outside and return air streams."
+        }, 
+        {
+            "id": 36,
+            "name": "Outside Damper",
+            "parent": "Damper",
+            "alternative": "none",
+            "description": "A damper that modulates the flow of outside air."
+        }, 
+        {
+            "id": 37,
+            "name": "Return Damper",
+            "parent": "Damper",
+            "alternative": "none",
+            "description": "A damper that modulates the flow of return air."
+        }, 
+        {
+            "id": 38,
+            "name": "Booster Fan",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "Fan activated to increase airflow beyond what is provided by the default configuration."
+        }, 
+        {
+            "id": 39,
+            "name": "Ceiling Fan",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "A fan installed on the ceiling of a room for the purpose of air circulation."
+        }, 
+        {
+            "id": 40,
+            "name": "Cooling Tower Fan",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "A fan that pulls air through a cooling tower and across the louvers where the water falls to aid in heat exchange by the process of evaporation."
+        }, 
+        {
+            "id": 41,
+            "name": "Discharge Fan",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "Fan moving air discharged from HVAC vents. Fan moving supply air -- air that is supplied from the HVAC system into the building."
+        },
+        {
+            "id": 42,
+            "name": "Exhaust Fan",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "Fan moving exhaust air -- air that must be removed from a space due to contaminants."
+        }, 
+        {
+            "id": 43,
+            "name": "Fresh Air Fan",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "Fan moving fresh air -- air that is supplied into the building from the outdoors."
+        }, 
+        {
+            "id": 44,
+            "name": "Return Fan",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "Fan moving return air -- air that is circulated from the building back into the HVAC system."
+        }, 
+        {
+            "id": 45,
+            "name": "Standby Fan",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "Fan that is activated as part of a lead/lag operation or when a primary fan raises an alarm."
+        }, 
+        {
+            "id": 46,
+            "name": "Supply Fan",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "Fan moving supply air -- air that is supplied from the HVAC system into the building Fan moving air discharged from HVAC vents."
+        }, 
+        {
+            "id": 47,
+            "name": "Final Filter",
+            "parent": "Filter",
+            "alternative": "none",
+            "description": "The last, high-efficiency filter installed in a sequence to remove the finest particulates from the substance being filtered."
+        },
+        {
+            "id": 48,
+            "name": "Intake Air Filter",
+            "parent": "Fan",
+            "alternative": "none",
+            "description": "Filters air intake."
+        }, 
+        {
+            "id": 49,
+            "name": "Mixed Air Filter",
+            "parent": "Filter",
+            "alternative": "none",
+            "description": "A filter that is applied to the mixture of recirculated and outside air."
+        },
+        {
+            "id": 50,
+            "name": "Pre Filter",
+            "parent": "Filter",
+            "alternative": "none",
+            "description": "A filter installed in front of a more efficient filter to extend the life of the more expensive higher efficiency filter."
+        },
+        {
+            "id": 51,
+            "name": "Return Air Filter",
+            "parent": "Filter",
+            "alternative": "none",
+            "description": "Filters return air."
+        },
+        {
+            "id": 52,
+            "name": "Coil",
+            "parent": "Heat Exchanger",
+            "alternative": "none",
+            "description": "Cooling or heating element made of pipe or tube that may or may not be finned and formed into helical or serpentine shape (ASHRAE Dictionary)."
+        },
+        {
+            "id": 53,
+            "name": "Condenser Heat Exchanger",
+            "parent": "Heat Exchanger",
+            "alternative": "none",
+            "description": "A heat exchanger in which the primary heat transfer vapor changes its state to a liquid phase."
+        },                 
+        {
+            "id": 54,
+            "name": "Evaporative Heat Exchanger",
+            "parent": "Heat Exchanger",
+            "alternative": "none",
+            "description": "Cooling or heating element made of pipe or tube that may or may not be finned and formed into helical or serpentine shape (ASHRAE Dictionary)."
+        },
+        {
+            "id": 55,
+            "name": "Heat Wheel",
+            "parent": "Heat Exchanger",
+            "alternative": "none",
+            "description": "A rotary heat exchanger positioned within the supply and exhaust air streams of an air handling system in order to recover heat energy."
+        }, 
+        {
+            "id": 56,
+            "name": "Water Pump",
+            "parent": "Pump",
+            "alternative": "none",
+            "description": "A pump that performs work on water."
+        },
+        {
+            "id": 57,
+            "name": "Air Diffuser",
+            "parent": "Terminal Unit",
+            "alternative": "none",
+            "description": "A device that is a component of the air distribution system that controls the delivery of conditioned and/or ventilating air into a room."
+        },
+        {
+            "id": 58,
+            "name": "Constant Air Volume Box",
+            "parent": "Terminal Unit",
+            "alternative": "none",
+            "description": "A terminal unit for which supply air flow rate is constant and the supply air temperature is varied to meet thermal load."
+        },
+        {
+            "id": 59,
+            "name": "Fan Coil Unit",
+            "parent": "Terminal Unit",
+            "alternative": "none",
+            "description": "Terminal device consisting of a heating and/or cooling heat exchanger or 'coil' and fan that is used to control the temperature in the space where it is installed."
+        }, 
+        {
+            "id": 60,
+            "name": "Radiant Panel",
+            "parent": "Terminal Unit",
+            "alternative": "none",
+            "description": "Temperature-controlled surface that provides fifty percent (50%) or more of the design heat transfer by thermal radiation."
+        },
+        {
+            "id": 61,
+            "name": "Radiator",
+            "parent": "Terminal Unit",
+            "alternative": "none",
+            "description": "Heat exchangers designed to transfer thermal energy from one medium to another."
+        },
+        {
+            "id": 62,
+            "name": "Variable Air Volume Box",
+            "parent": "Terminal Unit",
+            "alternative": "VAV",
+            "description": "A device that regulates the volume and temperature of air delivered to a zone by opening or closing a damper."
+        },
+        {
+            "id": 63,
+            "name": "Bypass Valve",
+            "parent": "Valve",
+            "alternative": "none",
+            "description": "A type of valve installed in a bypass pipeline."
+        }, 
+        {
+            "id": 64,
+            "name": "Cooling Valve",
+            "parent": "Valve",
+            "alternative": "none",
+            "description": "A valve that controls air temperature by modulating the amount of cold water flowing through a cooling coil."
+        },
+        {
+            "id": 65,
+            "name": "Gas Valve",
+            "parent": "Valve",
+            "alternative": "none",
+            "description": "A type of valve installed for Gas."
+        }, 
+        {
+            "id": 66,
+            "name": "Heating Valve",
+            "parent": "Valve",
+            "alternative": "none",
+            "description": "A valve that controls air temperature by modulating the amount of hot water flowing through a heating coil."
+        },
+        {
+            "id": 67,
+            "name": "Isolation Valve",
+            "parent": "Valve",
+            "alternative": "none",
+            "description": "A valve that stops the flow of a fluid, usually for maintenance or safety purposes."
+        },
+        {
+            "id": 68,
+            "name": "Steam Valve",
+            "parent": "Valve",
+            "alternative": "none",
+            "description": "A valve that relates to the control of steam."
+        },
+        {
+            "id": 69,
+            "name": "Water Valve",
+            "parent": "Valve",
+            "alternative": "none",
+            "description": "A valve that modulates the flow of water."
+        },   
+        {
+            "id": 70,
+            "name": "Underfloor Air Plenum",
+            "parent": "Air Plenum",
+            "alternative": "none",
+            "description": "An open space between a structural concrete slab and the underside of a raised access floor system that connects to an air handling unit to receive conditioned and/or ventilating air before delivery to the room(s)."
+        },
+        {
+            "id": 71,
+            "name": "Condensing Natural Gas Boiler",
+            "parent": "Boiler",
+            "alternative": "none",
+            "description": "A closed, pressure vessel that uses natural gas and heat exchanger that capture and reuse any latent heat for heating water or other fluids to supply steam or hot water for heating, humidification, or other applications."
+        },
+        {
+            "id": 72,
+            "name": "Noncondensing Natural Gas Boiler",
+            "parent": "Boiler",
+            "alternative": "none",
+            "description": "A closed, pressure vessel that uses natural gas with no system to capture latent heat for heating water or other fluids to supply steam or hot water for heating, humidification, or other applications."
+        },
+        {
+            "id": 73,
+            "name": "Cooling Coil",
+            "parent": "Coil",
+            "alternative": "none",
+            "description": "A cooling element made of pipe or tube that removes heat from equipment, machines or airflows. Typically filled with either refrigerant or cold water."
+        },    
+        {
+            "id": 74,
+            "name": "Heating Coil",
+            "parent": "Coil",
+            "alternative": "none",
+            "description": "A heating element typically made of pipe, tube or wire that emits heat. Typically filled with hot water, or, in the case of wire, uses electricity."
+        },
+        {
+            "id": 75,
+            "name": "Chilled Water Pump",
+            "parent": "Water Pump",
+            "alternative": "none",
+            "description": "A pump that performs work on chilled water; typically part of a chilled water system."
+        }, 
+        {
+            "id": 76,
+            "name": "Condenser Water Pump",
+            "parent": "Water Pump",
+            "alternative": "none",
+            "description": "A pump that performs work on hot water; typically part of a hot water system."
+        },   
+        {
+            "id": 77,
+            "name": "Hot Water Pump",
+            "parent": "Water Pump",
+            "alternative": "none",
+            "description": "A pump that performs work on hot water; typically part of a hot water system."
+        }, 
+        {
+            "id": 78,
+            "name": "Displacement Flow Air Diffuser",
+            "parent": "Air Diffuser",
+            "alternative": "none",
+            "description": "An air diffuser that is designed for low discharge air speeds to minimize turbulence and induction of room air. This diffuser is used with displacement ventilation systems."
+        },   
+        {
+            "id": 79,
+            "name": "Jet Nozzle Air Diffuser",
+            "parent": "Air Diffuser",
+            "alternative": "none",
+            "description": "An air diffuser that is designed to produce high velocity discharge air stream to throw the air over a large distance or target the air stream to a localize area."
+        }, 
+        {
+            "id": 80,
+            "name": "Laminar Flow Air Diffuser",
+            "parent": "Air Diffuser",
+            "alternative": "none",
+            "description": "An air diffuser that is designed for low discharge air speeds to provide uniform and unidirectional air pattern which minimizes room air entrainment."
+        },
+        {
+            "id": 81,
+            "name": "Embedded Surface System Panel",
+            "parent": "Radiant Panel",
+            "alternative": "ESS Panel",
+            "description": "Radiant panel heating and cooling system where the energy heat source or sink is embedded in a radiant layer which is thermally insulated from the building structure."
+        }, 
+        {
+            "id": 82,
+            "name": "Radiant Ceiling Pane",
+            "parent": "Radiant Panel",
+            "alternative": "RC Panel",
+            "description": "Radiant panel heating and cooling system that are usually made from metal and suspended under the ceiling or insulated from the building structure."
+        },
+        {
+            "id": 83,
+            "name": "Thermally Activated Building System Panel",
+            "parent": "Radiant Panel",
+            "alternative": "TABS Panel",
+            "description": "Radiant panel heating and cooling system where the energy heat source or sink is embedded in the building structure such as in slabs and walls."
+        }, 
+        {
+            "id": 84,
+            "name": "Baseboard Radiator",
+            "parent": "Radiator",
+            "alternative": "none",
+            "description": "Steam, hydronic, or electric heating device located at or near the floor."
+        },
+        {
+            "id": 85,
+            "name": "Electric Radiator",
+            "parent": "Radiator",
+            "alternative": "none",
+            "description": "Electric heating device."
+        },
+        {
+            "id": 86,
+            "name": "Hot Water Radiator",
+            "parent": "Radiator",
+            "alternative": "none",
+            "description": "Radiator that uses hot water."
+        },
+        {
+            "id": 87,
+            "name": "Steam Radiator",
+            "parent": "Radiator",
+            "alternative": "none",
+            "description": "Radiator that uses steam."
+        },
+        {
+            "id": 88,
+            "name": "Variable Air Volume Box With Reheat",
+            "parent": "Variable Air Volume Box",
+            "alternative": "RVAV",
+            "description": "A VAV box with a reheat coil mounted on the discharge end of the unit that can heat the air delivered to a zone."
+        },
+        {
+            "id": 89,
+            "name": "Condenser Water Bypass Valve",
+            "parent": "Bypass Valve",
+            "alternative": "none",
+            "description": "A valve installed in a bypass line of a condenser water loop."
+        }, 
+        {
+            "id": 90,
+            "name": "Differential Pressure Bypass Valve",
+            "parent": "Bypass Valve",
+            "alternative": "none",
+            "description": "A 2-way, self contained proportional valve with an integral differential pressure adjustment setting."
+        },
+        {
+            "id": 91,
+            "name": "Hot Water Valve",
+            "parent": "Heating Valve",
+            "alternative": "none",
+            "description": "A valve regulating the flow of hot water."
+        }, 
+        {
+            "id": 92,
+            "name": "Reheat Valve",
+            "parent": "Heating Valve",
+            "alternative": "none",
+            "description": "A valve that controls air temperature by modulating the amount of hot water flowing through a reheat coil."
+        },
+        {
+            "id": 93,
+            "name": "Return Heating Valve",
+            "parent": "Heating Valve",
+            "alternative": "none",
+            "description": "A valve installed on the return side of a heat exchanger."
+        },
+        {
+            "id": 94,
+            "name": "Condenser Water Isolation Valve",
+            "parent": "Isolation Valve",
+            "alternative": "none",
+            "description": "An isolation valve installed in the condenser water loop."
+        },
+        {
+            "id": 95,
+            "name": "Chilled Water Valve",
+            "parent": "Water Valve",
+            "alternative": "none",
+            "description": "A valve that modulates the flow of chilled water."
+        },
+        {
+            "id": 96,
+            "name": "Condenser Water Valve",
+            "parent": "Water Valve",
+            "alternative": "none",
+            "description": "A valve that modulates the flow of condenser water."
+        },  
+        {
+            "id": 97,
+            "name": "Hot Water Valve",
+            "parent": "Water Valve",
+            "alternative": "none",
+            "description": "A valve regulating the flow of hot water."
+        },  
+        {
+            "id": 98,
+            "name": "Makeup Water Valve",
+            "parent": "Water Valve",
+            "alternative": "none",
+            "description": "A valve regulating the flow of makeup water into a water holding tank, e.g. a cooling tower, hot water tank."
+        }, 
+        {
+            "id": 99,
+            "name": "Chilled Water Coil",
+            "parent": "Cooling Coil",
+            "alternative": "none",
+            "description": "A cooling element made of pipe or tube that removes heat from equipment, machines or airflows that is filled with chilled water."
+        },  
+        {
+            "id": 100,
+            "name": "Hot Water Coil",
+            "parent": "Heating Coil",
+            "alternative": "none",
+            "description": "A heating element typically made of pipe, tube or wire that emits heat that is filled with hot water."
+        }, 
+        {
+            "id": 101,
+            "name": "Electric Baseboard Radiator",
+            "parent": "Electric Radiator",
+            "alternative": "none",
+            "description": "Electric heating device located at or near the floor."
+        },  
+        {
+            "id": 102,
+            "name": "Hot Water Baseboard Radiator",
+            "parent": "Electric Radiator",
+            "alternative": "none",
+            "description": "Hydronic heating device located at or near the floor."
+        },
+        {
+            "id": 103,
+            "name": "Steam Baseboard Radiator",
+            "parent": "Electric Radiator",
+            "alternative": "none",
+            "description": "Steam heating device located at or near the floor."
+        },  
+        {
+            "id": 104,
+            "name": "Hot Water Baseboard Radiator",
+            "parent": "Hot Water Radiator",
+            "alternative": "none",
+            "description": "Hydronic heating device located at or near the floor."
+        },  
+        {
+            "id": 105,
+            "name": "Steam Baseboard Radiator",
+            "parent": "Steam Radiator",
+            "alternative": "none",
+            "description": "Steam heating device located at or near the floor."
+        },  
+        {
+            "id": 106,
+            "name": "Domestic Hot Water Valve",
+            "parent": "Hot Water Valve",
+            "alternative": "none",
+            "description": "A valve regulating the flow of domestic hot water."
+        },
+        {
+            "id": 107,
+            "name": "Preheat Hot Water Valve",
+            "parent": "Hot Water Valve",
+            "alternative": "none",
+            "description": "A valve regulating the preheating flow of hot water."
+        }                                                          
+    ],                                                                    
+                                                      
+    "point": [
+        {
+            "id": 0,
+            "name": "Alarm",
+            "parent": "Point",
+            "monitered": true,
+            "category": "occupant-related",
+            "display-screen": false,
+            "protocol": "BACnet",
+            "energy-rating": 1,
+            "description": "Alarm points are signals (either audible or visual) that alert an operator to an off-normal condition which requires some form of corrective action."
+        },
+        {
+            "id": 1,
+            "name": "Command",    
+            "parent": "Point",
+            "monitered": false,
+            "category": "equipment-related",
+            "display-screen": true,
+            "protocol": "Modbus",
+            "energy-rating": 3,
+            "description": "A Command is an output point that directly determines the behavior of equipment and/or affects relevant operational points."
+        },
+        {
+            "id": 2,
+            "name": "Parameter",
+            "parent": "Point",
+            "monitered": true,
+            "category": "critical operation",
+            "display-screen": false,
+            "protocol": "LonTalk",
+            "energy-rating": 1,
+            "description": "Parameter points are configuration settings used to guide the operation of equipment and control systems; for example they may provide bounds on valid setpoint values."
+        },
+        {
+            "id": 3,
+            "name": "Sensor",
+            "parent": "Point",
+            "monitered": true,
+            "category": "occupant-related",
+            "protocol": "LonTalk",
+            "display-screen": true,
+            "energy-rating": 3,
+            "description": "A Sensor is an input point that represents the value of a device or instrument designed to detect and measure a variable (ASHRAE Dictionary)."
+        },
+        {
+            "id": 4,
+            "name": "Setpoint",
+            "parent": "Point",
+            "monitered": false,
+            "category": "equipment-related",
+            "protocol": "Modbus",
+            "display-screen": true,
+            "energy-rating": 3,
+            "description": "A Setpoint is an input value at which the desired property is set."
+        },
+        {
+            "id": 5,
+            "name": "Status",
+            "parent": "Point",
+            "monitered": true,
+            "category": "occupant-related",
+            "protocol": "Modbus",
+            "display-screen": true,
+            "energy-rating": 3,
+            "description": "A Status is input point that reports the current operating mode, state, position, or condition of an item. Statuses are observations and should be considered 'read-only'."
+        }
+    ]
+}

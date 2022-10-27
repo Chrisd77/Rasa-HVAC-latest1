@@ -1,0 +1,60 @@
+version: "3.1"
+rules:
+  - rule: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - rule: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  - rule: neo4j integration
+    steps:
+      - intent: neo4_actions
+      - action: action_neo4_actions
+  - rule: query knowledge base
+    steps:
+      - intent: query_knowledge_base
+      - action: action_query_knowledge_base
+  - rule: raise a fault
+    steps:
+      - intent: general_fault
+      - action: utter_general_fault
+  - rule: fault location
+    steps:      
+      - intent: general_fault_location
+      - action: utter_general_fault_location   
+  - rule: control panel message
+    steps:  
+    - intent: general_control_panel
+    - action: utter_general_control_panel
+  - rule: replacement part
+    steps:  
+    - intent: replacement_part
+    - action: utter_replacement_part
+    - action: utter_item_no_stock
+  - rule: no stock for item
+    steps:  
+    - intent: item_no_stock
+    - action: utter_item_no_stock
+  - rule: alternative item success
+    steps:  
+    - intent: item_alternative
+    - action: utter_item_alternative  
+  - rule: control panel message
+    steps:  
+    - intent: dont_know
+    - action: utter_dont_know 
+  - rule: out of scope message
+    steps:  
+    - intent: out_of_scope
+    - action: utter_out_of_scope
+  - rule: bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+  - rule: Implementation of the Two-Stage-Fallback
+    steps:
+      - intent: nlu_fallback
+      - action: action_two_stage_fallback
+      - active_loop: action_two_stage_fallback
